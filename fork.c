@@ -18,7 +18,7 @@ int main(int argc, char** argv){
 
     fk = fork();
 
-    if(fk == 0) {
+    if(fk != 0) {
         printf("Processo pai PID = %d\n", getpid());
     }
     else
